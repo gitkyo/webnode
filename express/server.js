@@ -11,7 +11,8 @@ import bodyParser from 'body-parser'
 
 
 import express from "express";
-import hbs from "hbs";
+import pkg from 'hbs';
+const { hbs } = pkg;
 
 // exemple d'import via requiere
 // const express = require('express')
@@ -40,7 +41,7 @@ const router = express.Router()
 
 app.set( "view engine", "hbs" );
 app.set( "views", viewsPath );
-hbs.registerPartials( partialsPath );
+pkg.registerPartials( partialsPath );
 app.use( express.static( publishDirectoryPath ) );
 
 
