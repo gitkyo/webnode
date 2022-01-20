@@ -31,9 +31,11 @@ const partialsPath = path.join( __dirname, "templates/partials" );
 
 
 export const app = express();
-export const serRes = serverless(app)
+export const handler = serverless(app)
 
-const router = express.Router();
+// export conast handler function serverless(app);
+
+const router = express.Router()
 
 
 app.set( "view engine", "hbs" );
@@ -63,3 +65,4 @@ router.post('/', (req, res) => res.json({ postBody: req.body }));
 // app.get( "/about", function ( req, res ) {
 // 	res.render( "about" );
 // } );
+
