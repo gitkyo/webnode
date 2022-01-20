@@ -44,7 +44,7 @@ hbs.registerPartials( partialsPath );
 app.use( express.static( publishDirectoryPath ) );
 
 
-app.get('/', (req, res) => {
+router.get('/', (req, res) => {
   	res.render( "index", {
 		title: "Run node App",
 	} );
