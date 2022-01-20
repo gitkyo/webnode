@@ -1,0 +1,19 @@
+{
+  "name": "webnode",
+  "version": "1.0.0",
+  "description": "![logoNodeJS](https://infoplus.consulting/wp-content/uploads/2019/01/node-js.png)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitkyo/webnode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gitkyo/webnode/issues"
+  },
+  "homepage": "https://github.com/gitkyo/webnode#readme"
+}
