@@ -36,9 +36,7 @@ app.use( express.static( publishDirectoryPath ) );
 
 
 app.get( "/", function ( req, res ) {
-	res.render( "index", {
-		title: "Run node App",
-	} );
+	res.send( "index");
 } );
 
 app.get( "/about", function ( req, res ) {
