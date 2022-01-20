@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/gitkyo/webnode/issues"
   },
-  "homepage": "https://github.com/gitkyo/webnode#readme"
+  "homepage": "https://github.com/gitkyo/webnode#readme",
+  "dependencies": {
+    "chalk": "^5.0.0"
+  }
 }
