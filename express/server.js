@@ -64,13 +64,13 @@ app.get( "/about", function ( req, res ) {
 
 // router.get('/another', (req, res) => res.json({ route: req.originalUrl }));
 
-app.post('/', (req, res) => res.json({ postBody: req.body }));
+router.post('/', (req, res) => res.json({ postBody: req.body }));
 
 // router.post('/another', (req, res) => res.json({ postBody: req.body }));
 
 app.use(bodyParser.json());
 app.use('/.netlify/functions/server', router);  // path must route to lambda
-app.use('/', (req, res) => res.sendFile(path.join(__dirname, '../index.html')));
+app.use('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
 
 //404 page - A mettre a la fin des app.get !
 app.get('*',(req, res) => {
