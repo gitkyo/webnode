@@ -17,7 +17,7 @@ import hbs from 'hbs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const publishDirectoryPath = path.join(__dirname, '/public')
+const publishDirectoryPath = path.join(__dirname, '/public') 
 const viewsPath = path.join(__dirname, '/templates/views')
 const partialsPath = path.join(__dirname, 'templates/partials')
 
